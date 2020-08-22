@@ -8,7 +8,7 @@ var sass = require('gulp-sass');
 var postcss = require('gulp-postcss');
 var autoprefixer = require('autoprefixer');
 var server = require('browser-sync').create();
-var csso = require('gulp-csso');
+// var csso = require('gulp-csso');
 var imagemin = require('gulp-imagemin');
 var webp = require('gulp-webp');
 var svgstore = require('gulp-svgstore');
@@ -22,16 +22,14 @@ gulp.task('css', function () {
       .pipe(sourcemap.init())
       .pipe(sass())
       .pipe(postcss([autoprefixer()]))
-      .pipe(csso())
-      .pipe(rename('style.min.css'))
       .pipe(sourcemap.write('.'))
-      .pipe(gulp.dest('build/css'))
+      .pipe(gulp.dest('source/css'))
       .pipe(server.stream());
 });
 
 gulp.task('server', function () {
   server.init({
-    server: 'build/',
+    server: 'source/',
     notify: false,
     open: true,
     cors: true,

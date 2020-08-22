@@ -1,0 +1,11 @@
+.description__list {
+  @include set-font-size(20px, 24px);
+  @include reset-to-zero();
+  @include list-style-none();
+
+  display: flex;
+  justify-content: space-between;
+  opacity: 0.3;
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(44, 46, 63, 0.3);
+}

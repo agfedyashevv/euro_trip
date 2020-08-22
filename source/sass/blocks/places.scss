@@ -1,0 +1,54 @@
+.places {
+  padding-top: 199px;
+}
+
+.places__title {
+  width: 358px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+  color: $dark;
+
+  @include set-font-size(55px, 80px);
+}
+
+.places__line {
+  @include accent-line(228px, 4px);
+  margin-bottom: 30px;
+}
+
+.places__text {
+  margin-bottom: 56px;
+  width: 328px;
+}
+
+.places__list {
+  @include reset-to-zero();
+  @include list-style-none();
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 1170px;
+}
+
+.places__item {
+  position: relative;
+  @include set-img-size(350px, 430px);
+  background-color: $blue-bg;
+  margin-bottom: 101px;
+}
+
+.places__country {
+    position: absolute;
+    content: "";
+    color: $dark;
+    background-color: $white;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    padding-top: 16px;
+
+    @include set-font-size(24px, 29px);
+    @include set-img-size(215px, 45px);
+}

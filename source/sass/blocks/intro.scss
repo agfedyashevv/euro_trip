@@ -1,0 +1,29 @@
+.intro {
+  background-color: $blue-bg;
+  background-image: url("../img/intro-desktop.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  min-height: 860px;
+  color: $white;
+}
+
+.intro__box {
+  padding-top: 185px;
+  padding-bottom: 100px;
+  margin-left: 400px;
+}
+
+.intro__title {
+  width: 412px;
+  margin: 0;
+  margin-bottom: 30px;
+  font-weight: 600;
+
+  @include set-font-size(55px, 80px);
+}
+
+.intro__text {
+  width: 376px;
+  margin: 0;
+  margin-bottom: 39px;
+}

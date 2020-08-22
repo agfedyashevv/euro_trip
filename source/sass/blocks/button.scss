@@ -1,0 +1,13 @@
+.button {
+  padding: 30px 40px;
+  background-color: $accent_main;
+  color: $white;
+  letter-spacing: 2px;
+
+  @include uppercase();
+  @include set-font-size(12px, 15px);
+
+  &:hover {
+    background-color: $accent_hover;
+  }
+}

@@ -1,3 +1,19 @@
+// body {
+//   margin: 0;
+//   padding: 0;
+//   font-family: $font-title;
+//   background-color: $white;
+//   color: $dark;
+//   font-weight: 400;
+
+//   @include set-font-size();
+// }
+
+@mixin set-font-size($font-size: 16px, $line-height: 28px) {
+  font-size: $font-size;
+  line-height: $line-height;
+}
+
 .visually-hidden {
   position: absolute;
   clip: rect(0 0 0 0);
@@ -19,12 +35,31 @@ img {
   height: auto;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
+@mixin list-style-none() {
+  list-style: none;
 }
 
-.list-style-none {
-  list-style: none;
+@mixin reset-to-zero() {
+  margin: 0;
+  padding: 0;
+}
+
+@mixin uppercase() {
+  text-transform: uppercase;
+}
+
+@mixin pseudo() {
+  content: "";
+  display: block;
+  position: absolute;
+}
+
+@mixin set-img-size($width, $height) {
+  width: $width;
+  height: $height;
+}
+
+@mixin accent-line($width, $height) {
+  @include set-img-size($width, $height);
+  background-color: $accent_main;
 }

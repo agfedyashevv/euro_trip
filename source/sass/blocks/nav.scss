@@ -1,0 +1,23 @@
+.nav__list,
+.nav__phone {
+  @include list-style-none();
+  @include reset-to-zero();
+}
+
+.nav__list {
+  display: flex;
+  margin-right: 90px;
+}
+
+.nav__item {
+  margin-right: 40px;
+
+  &:hover {
+    color: $accent_main;
+  }
+}
+
+.nav__phone {
+  color: $accent_main;
+  text-decoration: underline;
+}
