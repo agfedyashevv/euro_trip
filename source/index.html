@@ -37,10 +37,13 @@
     <h1 class="visually-hidden">Сайт для путешественников "Путешествие по Европе"</h1>
 
     <section class="intro">
-      <div class="intro__box">
-        <h2 class="intro__title">Путешествие по Европе</h2>
-        <p class="intro__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота природы.</p>
-        <a class="intro__button button" href="#">Смотреть тур</a>
+      <div class="intro__wrap">
+        <div class="intro__box">
+          <h2 class="intro__title">Путешествие по Европе</h2>
+          <p class="intro__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
+            потрясающая красота природы.</p>
+          <a class="intro__button button" href="#">Смотреть тур</a>
+        </div>
       </div>
     </section>
 
@@ -51,110 +54,152 @@
       <ul class="places__list">
         <li class="places__item">
           <div class="places__country">Греция</div>
-          <div class="places__image">
+          <div class="places__block">
             <picture>
-              <img src="img/greece-desktop.jpg" alt="Греция">
+              <img class="places__image" src="img/greece-desktop.jpg" alt="Горы в Греции">
             </picture>
+            <div class="places__mask">
+              <a href="#" class="places__more">Смотреть подробнее</a>
+            </div>
           </div>
         </li>
         <li class="places__item">
           <div class="places__country">Албания</div>
-          <div class="places__image">
+          <div>
             <picture>
-              <img src="img/albania-desktop.jpg" alt="Албания">
+              <img class="places__image" src="img/albania-desktop.jpg" alt="Море и прибрежная зона в Албании">
             </picture>
+            <div class="places__mask">
+              <a href="#" class="places__more">Смотреть подробнее</a>
+            </div>
           </div>
         </li>
         <li class="places__item">
           <div class="places__country">Македония</div>
-          <div class="places__image">
-            <picture>
-              <img src="img/macedonia-desktop.jpg" alt="Македония">
+          <div>
+            <picture class="places__picture">
+              <img class="places__image" src="img/macedonia-desktop.jpg"
+                alt="Историческое здание на берегу залива в Македонии">
             </picture>
+            <div class="places__mask">
+              <a href="#" class="places__more">Смотреть подробнее</a>
+            </div>
           </div>
         </li>
         <li class="places__item">
           <div class="places__country">Черногория</div>
-          <div class="places__image">
+          <div>
             <picture>
-              <img src="img/montenegro-desktop.jpg" alt="Черногория">
+              <img class="places__image" src="img/montenegro-desktop.jpg" alt="Горная река в Черногория">
             </picture>
+            <div class="places__mask">
+              <a href="#" class="places__more">Смотреть подробнее</a>
+            </div>
           </div>
         </li>
         <li class="places__item">
           <div class="places__country">Хорватия</div>
-          <div class="places__image">
+          <div>
             <picture>
-              <img src="img/croatia-desktop.jpg" alt="Хорватия">
+              <img class="places__image" src="img/croatia-desktop.jpg" alt="Озеро в пещере в Хорватии">
             </picture>
+            <div class="places__mask">
+              <a href="#" class="places__more">Смотреть подробнее</a>
+            </div>
           </div>
         </li>
       </ul>
     </section>
 
     <section class="description">
-      <ul class="description__list">
-        <li class="description__item">Греция</li>
-        <li class="description__item">Албания</li>
-        <li class="description__item">Македония</li>
-        <li class="description__item">Черногория</li>
-        <li class="description__item">Хорватия</li>
-      </ul>
-      <div class="description__country">
-        <h2 class="description__title">Греция</h2>
-        <p class="description__text">На севере Греции находится один из крупнейших комплексов монастырей, расположенных
-          на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь
-          основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной породы,
-          достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в монастырях
-          Метеоры.</p>
-        <a class="description__button button" href="#">Купить тур сейчас</a>
+      <div class="description__box">
+        <ul class="description__list">
+          <li class="description__item">Греция</li>
+          <li class="description__item">Албания</li>
+          <li class="description__item">Македония</li>
+          <li class="description__item">Черногория</li>
+          <li class="description__item">Хорватия</li>
+        </ul>
       </div>
-      <div class="description__review">
-        <h3>Отзывы</h3>
-        <p>Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же высоченные скалы. Но здесь потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю света!</p>
-        <div>
-          <img>
-          <p>Влада Голицина</p>
+      <div class="description__map">
+        <div class="description__inner">
+          <div class="description__width">
+            <div class="description__country">
+              <h2 class="description__title">Греция</h2>
+              <div class="description__line"></div>
+              <p class="description__text">На севере Греции находится один из крупнейших комплексов монастырей,
+                расположенных
+                на вершинах скал. Название его «Метеора» буквально переводится как «висящие в воздухе». Этот монастырь
+                основная цель нашего путешествия в Греции. После покарения скал из песчанника и обломочной горной
+                породы,
+                достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в
+                монастырях
+                Метеоры.</p>
+              <a class="description__button button" href="#">Купить тур сейчас</a>
+            </div>
+            <div class="description__review review">
+              <div class="review__inner">
+                <h3 class="review__title">Отзывы</h3>
+                <div class="review__line"></div>
+                <p class="review__text">Метеоры в Греции можно сравнить разве что с Монсерратт в Испании. Такие же
+                  высоченные скалы. Но здесь
+                  потрясает масштаб. Огромная территория, высоко в горах. Ощущение такое, как будто стоишь на краю
+                  света!
+                </p>
+                <div class="review__author">
+                  <img class="review__avatar" src="../img/review-avatar.jpg" width="38" height="38">
+                  <p class="review__name">Влада Голицина</p>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="prices">
-      <div>
-        <h2>Цены</h2>
-        <p>Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от Ваших потребностей и возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
-        <p>Свяжитесь с нами</p>
-        <p>+7 (499) -784-684-46</p>
+      <div class="prices__block">
+        <h2 class="prices__title">Цены</h2>
+        <div class="prices__line"></div>
+        <p class="prices__text">Специально для Вас мы разработали 2 пакета цен с разными условиями, отталкиваясь от
+          Ваших потребностей и
+          возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
+        <p class="prices__connection">Свяжитесь с нами</p>
+        <p class="prices__phone">+7 (499) -784-684-46</p>
       </div>
-      <ul>
-        <li>
-          <div>
-            <p>Комплексный</p>
-            <p>$1999</p>
+      <ul class="prices__list rate">
+        <li class="rate__item">
+          <div class="rate__inner">
+            <div class="rate__block">
+              <p class="rate__name">Комплексный</p>
+              <p class="rate__price">$1999</p>
+            </div>
+            <p class="rate__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+            <ul class="rate__list">
+              <li class="rate__include">Разработанный маршрут с гидом группы</li>
+              <li class="rate__include">Перелет, трансфер и проживание в отелях</li>
+              <li class="rate__include">Завтраки, ужины в отелях и ланчи на природе</li>
+              <li class="rate__include">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="button" href="#">Купить тур сейчас</a>
           </div>
-          <p>Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-          <ul>
-            <li>Разработанный маршрут с гидом группы</li>
-            <li>Перелет, трансфер и проживание в отелях</li>
-            <li>Завтраки, ужины в отелях и ланчи на природе</li>
-            <li>Экскурсии по удивительно красивым местам Европы</li>
-          </ul>
-          <a class="button" href="#">Купить тур сейчас</a>
         </li>
-        <li>
-          <div>
-            <p>Экономный</p>
-            <p>$1399</p>
+        <li class="rate__item">
+          <div class="rate__inner">
+            <div class="rate__block">
+              <p class="rate__name">Экономный</p>
+              <p class="rate__price">$1399</p>
+            </div>
+            <p class="rate__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+            <ul class="rate__list">
+              <li class="rate__include">Разработанный маршрут с гидом группы</li>
+              <li class="rate__include">Перелет и трансфер</li>
+              <li class="rate__include">Проживание в хостелах при отелях</li>
+              <li class="rate__include">Только завтраки в отелях</li>
+              <li class="rate__include">Экскурсии по удивительно красивым местам Европы</li>
+            </ul>
+            <a class="button" href="#">Купить тур сейчас</a>
           </div>
-          <p>Ознакомьтесь с перечнем того, что входит в данный пакет</p>
-          <ul>
-            <li>Разработанный маршрут с гидом группы</li>
-            <li>Перелет и трансфер</li>
-            <li>Проживание в хостелах при отелях</li>
-            <li>Только завтраки в отелях</li>
-            <li>Экскурсии по удивительно красивым местам Европы</li>
-          </ul>
-          <a class="button" href="#">Купить тур сейчас</a>
         </li>
       </ul>
     </section>
@@ -174,34 +219,38 @@
   </main>
 
   <footer class="footer">
-    <div>
-      <h4>Следующие путешествия</h4>
-      <ul>
-        <li>Марсель</li>
-        <li>Ним</li>
-        <li>Монпелье</li>
-        <li>Барселона</li>
-        <li>Пальма</li>
-        <li>Сардиния</li>
-        <li>Палермо</li>
-        <li>Катания</li>
-        <li>Неаполь</li>
-        <li>Рим</li>
-        <li>Корс</li>
-        <li>Ницца</li>
-        <li>Монако</li>
-        <li>Динь-ле-Бен</li>
-        <li>Гренобль</li>
+    <div class="footer__next next">
+      <h4 class="footer__title">Следующие путешествия</h4>
+      <ul class="next__list footer__text">
+        <li class="next__item">Марсель</li>
+        <li class="next__item">Ним</li>
+        <li class="next__item">Монпелье</li>
+        <li class="next__item">Барселона</li>
+        <li class="next__item">Пальма</li>
+        <li class="next__item">Сардиния</li>
+        <li class="next__item">Палермо</li>
+        <li class="next__item">Катания</li>
+        <li class="next__item">Неаполь</li>
+        <li class="next__item">Рим</li>
+        <li class="next__item">Корс</li>
+        <li class="next__item">Ницца</li>
+        <li class="next__item">Монако</li>
+        <li class="next__item">Динь-ле-Бен</li>
+        <li class="next__item">Гренобль</li>
       </ul>
     </div>
-    <div>
-      <h4>Наши контакты</h4>
-      <p>puteshestviemechta@gmail.ru</p>
-      <p>+7 (499) -784-684-46</p>
+    <div class="footer__contacts contacts">
+      <div class="contacts__box">
+        <h4 class="footer__title">Наши контакты</h4>
+        <p class="contacts__mail">puteshestviemechta@gmail.ru</p>
+        <p class="contacts__phone">+7 (499) -784-684-46</p>
+      </div>
     </div>
-    <div>
-      <h4>Корпоративные путешествия</h4>
-      <p>Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные туры очень сближают компанию, помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
+    <div class="footer__corp corp">
+      <h4 class="footer__title">Корпоративные путешествия</h4>
+      <p class="corp__text footer__text">Также вы можете заказать индивидуальное путешествие под вашу компанию. Подобные
+        туры очень сближают компанию,
+        помогают поддерживать корпоративный дух, а также являются оличным времяпрепровождением</p>
     </div>
   </footer>
 

@@ -1,0 +1,68 @@
+.prices {
+  @include page-wrap();
+
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 178px;
+}
+
+.prices__title,
+.prices__text,
+.prices__connection,
+.prices__phone {
+  margin: 0;
+}
+
+.prices__title {
+  margin-bottom: 20px;
+  font-weight: 600;
+
+  @include set-font-size(55px, 90px);
+}
+
+.prices__line {
+  margin-bottom: 30px;
+
+  @include accent-line(175px, 3px);
+}
+
+.prices__text {
+  margin-bottom: 60px;
+  opacity: 0.7;
+
+  @include set-font-size(16px, 27px);
+}
+
+.prices__block {
+  width: 300px;
+}
+
+.prices__connection {
+  color: $most_dark;
+  margin-bottom: 13px;
+
+  @include set-font-size(22px, 34px);
+}
+
+.prices__phone {
+  position: relative;
+  color: $black;
+
+  @include set-font-size(20px, 32px);
+
+  &::before {
+    background-image: url("../img/icon-phone-color.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    left: 0;
+
+    @include pseudo();
+    @include set-img-size(30px, 30px);
+  }
+}
+
+.prices__connection,
+.prices__phone {
+  text-align: center;
+}

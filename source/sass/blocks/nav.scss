@@ -6,6 +6,8 @@
 
 .nav__list {
   display: flex;
+  flex-wrap: wrap;
+  margin-left: auto;
   margin-right: 90px;
 }
 
@@ -17,7 +19,26 @@
   }
 }
 
+.nav__logo {
+  margin-right: 40px;
+}
+
 .nav__phone {
+  position: relative;
+  margin-left: 41px;
+  margin-right: 14px;
   color: $accent_main;
   text-decoration: underline;
+
+  @include set-font-size(16px, 32px);
+
+  &::before {
+    background-image: url("../img/icon-phone-color.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    left: -41px;
+
+    @include pseudo();
+    @include set-img-size(30px, 30px);
+  }
 }

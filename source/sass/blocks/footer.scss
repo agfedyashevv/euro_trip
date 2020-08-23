@@ -1,0 +1,26 @@
+.footer {
+  @include page-wrap();
+
+  display: flex;
+  justify-content: space-between;
+  color: $most_dark;
+  margin-bottom: 75px;
+}
+
+.footer__title {
+  margin: 0;
+  margin-bottom: 20px;
+  font-weight: 600;
+
+  @include set-font-size(18px, 32px);
+}
+
+.footer__next,
+.footer__contacts,
+.footer__corp {
+  width: 33%;
+}
+
+.footer__text {
+  opacity: 0.5;
+}

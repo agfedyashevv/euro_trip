@@ -1,0 +1,11 @@
+.next__list {
+  column-count: 3;
+  line-height: 24px;
+
+  @include reset-to-zero();
+  @include list-style-none();
+}
+
+.next__item {
+  min-width: 95px;
+}

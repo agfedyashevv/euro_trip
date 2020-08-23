@@ -1,0 +1,45 @@
+.rate {
+  display: flex;
+
+  @include reset-to-zero();
+  @include list-style-none();
+}
+
+.rate__inner {
+  padding: 40px 30px 30px;
+}
+
+.rate__item {
+  border: 1px solid rgba(44, 46, 63, 0.3);
+  background-color: $white;
+  border-radius: 6px;
+  max-width: 370px;
+  min-height: 672px;
+}
+
+.rate__block {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: $most_dark;
+  opacity: 0.7;
+  margin-bottom: 36px;
+}
+
+.rate__name {
+  font-weight: 600;
+
+  @include set-font-size(28px, 38px);
+}
+
+.rate__price {
+  font-weight: 700;
+
+  @include set-font-size(25px, 34px);
+}
+
+.rate__name,
+.rate__price,
+.rate__text {
+  margin: 0;
+}

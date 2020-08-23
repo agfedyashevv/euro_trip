@@ -1,0 +1,54 @@
+.review {
+  position: relative;
+  color: $dark;
+  background-image: url("../img/review-img-greece.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include set-img-size(430px, 596px);
+}
+
+.review__inner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 100px;
+  width: 382px;
+  padding: 30px;
+  background-color: $white;
+}
+
+.review__title {
+  margin: 0;
+  margin-bottom: 10px;
+  font-weight: 500;
+
+  @include set-font-size(30px, 37px);
+}
+
+.review__line {
+  @include accent-line(68px, 1px);
+}
+
+.review__text {
+  opacity: 0.7;
+  margin-bottom: 35px;
+
+  @include set-font-size(14px, 28px);
+}
+
+.review__author {
+  display: flex;
+  align-items: center;
+}
+
+.review__name {
+  margin: 0;
+  font-weight: 500;
+
+  @include set-font-size(16px, 24px);
+}
+
+.review__avatar {
+  margin-right: 16px;
+}

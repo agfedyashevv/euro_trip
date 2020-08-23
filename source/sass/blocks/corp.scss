@@ -1,0 +1,7 @@
+.corp {
+  @include padding-l-r(50px, 10px);
+}
+
+.corp__text {
+  line-height: 24px;
+}

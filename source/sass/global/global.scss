@@ -63,3 +63,8 @@ img {
   @include set-img-size($width, $height);
   background-color: $accent_main;
 }
+
+@mixin padding-l-r($padding-left: 25px, $padding-right: 25px) {
+  padding-left: $padding-left;
+  padding-right: $padding-right;
+}

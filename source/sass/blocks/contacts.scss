@@ -1,0 +1,48 @@
+.contacts__mail,
+.contacts__phone {
+  margin: 0;
+  color: $accent_main;
+  text-decoration: underline;
+}
+
+.contacts {
+  border-left: 1px solid #d7d9df;
+  border-right: 1px solid #d7d9df;
+
+  @include padding-l-r(90px, 10px);
+}
+
+.contacts__mail {
+  position: relative;
+  margin-left: 41px;
+  margin-bottom: 19px;
+
+  @include set-font-size(14px, 17px);
+
+  &::before {
+    background-image: url("../img/icon-letter.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    left: -41px;
+
+    @include pseudo();
+    @include set-img-size(26px, 20px);
+  }
+}
+
+.contacts__phone {
+  position: relative;
+  margin-left: 41px;
+
+  @include set-font-size(16px, 32px);
+
+  &::before {
+    background-image: url("../img/icon-phone.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    left: -41px;
+
+    @include pseudo();
+    @include set-img-size(30px, 30px);
+  }
+}
