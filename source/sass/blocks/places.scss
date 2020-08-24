@@ -1,116 +1,124 @@
-.places {
-  padding-top: 199px;
+@media (min-width: $mobile-width) {
+  .places {
+    padding-top: 199px;
 
-  @include page-wrap();
-}
+    @include page-wrap();
+  }
 
-.places__title {
-  width: 358px;
-  margin: 0;
-  margin-bottom: 30px;
-  font-weight: 600;
-  color: $dark;
+  .places__title {
+    width: 358px;
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 600;
+    color: $dark;
 
-  @include set-font-size(55px, 80px);
-}
+    @include set-font-size(55px, 80px);
+  }
 
-.places__line {
-  margin-bottom: 30px;
+  .places__line {
+    margin-bottom: 30px;
 
-  @include accent-line(228px, 4px);
-}
+    @include accent-line(228px, 4px);
+  }
 
-.places__text {
-  margin-bottom: 56px;
-  width: 328px;
-}
+  .places__text {
+    margin-bottom: 56px;
+    width: 328px;
+  }
 
-.places__list {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  max-width: 1170px;
+  .places__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1170px;
 
-  @include reset-to-zero();
-  @include list-style-none();
-}
+    @include reset-to-zero();
+    @include list-style-none();
+  }
 
-.places__mask {
-  position: absolute;
-  margin: 0;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  opacity: 0;
-  height: 100%;
-  background: $most_dark;
-  text-align: center;
+  .places__mask {
+    position: absolute;
+    margin: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    height: 100%;
+    background: $most_dark;
+    text-align: center;
 
-  transform: translateY(100%);
-  transition: all 0.125s ease-in-out;
+    transform: translateY(100%);
+    transition: all 0.125s ease-in-out;
 
-  &::before {
-    content: "";
+    &::before {
+      content: "";
+      display: inline-block;
+      vertical-align: middle;
+      width: 1px;
+      height: 100%;
+    }
+  }
+
+  .places__more {
     display: inline-block;
     vertical-align: middle;
-    width: 1px;
-    height: 100%;
+    color: $white;
+    left: 100%;
+    border: 1px solid $white;
+    padding: 30px 25px;
+
+    @include uppercase();
+    @include set-font-size(14px, 17px);
+  }
+
+  .places__item {
+    position: relative;
+    background-color: $blue-bg;
+    margin-bottom: 101px;
+    overflow: hidden;
+    width: 320px;
+    height: 430px;
+
+    &:hover .places__mask {
+      opacity: 60%;
+      transform: translateY(0%);
+    }
+
+    &:hover .places__more {
+      opacity: 100%;
+    }
+  }
+
+  .places__country {
+    z-index: 1;
+    position: absolute;
+    content: "";
+    color: $dark;
+    background-color: $white;
+    text-align: center;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 0;
+    padding-top: 16px;
+
+    @include set-font-size(24px, 29px);
+    @include set-img-size(215px, 45px);
+  }
+
+  .places__image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    height: 430px;
+    min-width: 230px;
+    object-fit: cover;
   }
 }
 
-.places__more {
-  display: inline-block;
-  vertical-align: middle;
-  color: $white;
-  left: 100%;
-  border: 1px solid $white;
-  padding: 30px 25px;
-
-  @include uppercase();
-  @include set-font-size(14px, 17px);
-}
-
-.places__item {
-  position: relative;
-  background-color: $blue-bg;
-  margin-bottom: 101px;
-  overflow: hidden;
-  width: 320px;
-  height: 430px;
-
-  &:hover .places__mask {
-    opacity: 60%;
-    transform: translateY(0%);
+@media (min-width: $tablet-width) {
+  .places {
+    padding-top: 80px;
   }
-
-  &:hover .places__more {
-    opacity: 100%;
-  }
-}
-
-.places__country {
-  z-index: 1;
-  position: absolute;
-  content: "";
-  color: $dark;
-  background-color: $white;
-  text-align: center;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 0;
-  padding-top: 16px;
-
-  @include set-font-size(24px, 29px);
-  @include set-img-size(215px, 45px);
-}
-
-.places__image {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  height: 430px;
-  min-width: 230px;
-  object-fit: cover;
 }

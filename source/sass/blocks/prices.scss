@@ -4,6 +4,7 @@
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  margin-top: -270px;
   margin-bottom: 178px;
 }
 
@@ -36,6 +37,7 @@
 
 .prices__block {
   width: 300px;
+  margin: auto 0;
 }
 
 .prices__connection {
@@ -47,9 +49,6 @@
 
 .prices__phone {
   position: relative;
-  color: $black;
-
-  @include set-font-size(20px, 32px);
 
   &::before {
     background-image: url("../img/icon-phone-color.svg");
@@ -65,4 +64,10 @@
 .prices__connection,
 .prices__phone {
   text-align: center;
+}
+
+.prices__tel {
+  color: $black;
+
+  @include set-font-size(20px, 32px);
 }

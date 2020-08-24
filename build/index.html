@@ -15,21 +15,22 @@
     <nav class="nav">
       <a class="nav__logo">
         <picture>
-
-          <img src="img/logo-way.svg" width="57" height="22" alt="Логотип сайта Way">
+          <source media="(min-width: 1024px)" srcset="img/logo-way-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-way-tablet.svg">
+          <img src="img/logo-way-mobile.svg" width="57" height="22" alt="Логотип сайта Way">
         </picture>
       </a>
     </nav>
     <ul class="nav__list">
       <li class="nav__item">
-        <a>О путешествии</a>
+        <a class="nav__link" href="#">О путешествии</a>
       </li>
       <li class="nav__item">
-        <a>Цены</a>
+        <a class="nav__link" href="#">Цены</a>
       </li>
     </ul>
     <ul class="nav__phone">
-      <li>+7 (499) -784-684-46</li>
+      <li><a class="nav__tel" href="tel:+749978468446">+7 (499) -784-684-46</a></li>
     </ul>
   </header>
 
@@ -40,9 +41,16 @@
       <div class="intro__wrap">
         <div class="intro__box">
           <h2 class="intro__title">Путешествие по Европе</h2>
-          <p class="intro__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
-            потрясающая красота природы.</p>
-          <a class="intro__button button" href="#">Смотреть тур</a>
+          <div class="intro__inner">
+            <p class="intro__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
+              потрясающая красота природы.</p>
+            <a class="button intro__button" href="#">Смотреть тур
+              <svg class="intro__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
+                <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M15 8L8 15L1 8" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+            </a>
+          </div>
         </div>
       </div>
     </section>
@@ -164,7 +172,7 @@
           Ваших потребностей и
           возможностей. Выберите для себя лучший вариант отпуска и отдохните на все 100%!</p>
         <p class="prices__connection">Свяжитесь с нами</p>
-        <p class="prices__phone">+7 (499) -784-684-46</p>
+        <p class="prices__phone"><a class="prices__tel" href="tel:+749978468446">+7 (499) -784-684-46</a></p>
       </div>
       <ul class="prices__list rate">
         <li class="rate__item">
@@ -174,13 +182,14 @@
               <p class="rate__price">$1999</p>
             </div>
             <p class="rate__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+            <div class="rate__line"></div>
             <ul class="rate__list">
               <li class="rate__include">Разработанный маршрут с гидом группы</li>
               <li class="rate__include">Перелет, трансфер и проживание в отелях</li>
               <li class="rate__include">Завтраки, ужины в отелях и ланчи на природе</li>
               <li class="rate__include">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
-            <a class="button" href="#">Купить тур сейчас</a>
+            <a class="button rate__button" href="#">Купить тур сейчас</a>
           </div>
         </li>
         <li class="rate__item">
@@ -190,6 +199,7 @@
               <p class="rate__price">$1399</p>
             </div>
             <p class="rate__text">Ознакомьтесь с перечнем того, что входит в данный пакет</p>
+            <div class="rate__line"></div>
             <ul class="rate__list">
               <li class="rate__include">Разработанный маршрут с гидом группы</li>
               <li class="rate__include">Перелет и трансфер</li>
@@ -197,7 +207,7 @@
               <li class="rate__include">Только завтраки в отелях</li>
               <li class="rate__include">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
-            <a class="button" href="#">Купить тур сейчас</a>
+            <a class="button rate__button" href="#">Купить тур сейчас</a>
           </div>
         </li>
       </ul>

@@ -13,8 +13,29 @@
   border: 1px solid rgba(44, 46, 63, 0.3);
   background-color: $white;
   border-radius: 6px;
-  max-width: 370px;
-  min-height: 672px;
+  max-width: 310px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+
+  &:hover .rate__include::before,
+  &:focus .rate__include::before {
+    background-image: url("../img/icon-check-black.svg");
+    left: -35px;
+  }
+
+  &:hover .rate__block,
+  &:focus .rate__block {
+    color: $accent_main;
+    opacity: 1;
+  }
+
+  &:hover .rate__line,
+  &:focus .rate__line {
+    background-color: $accent_main;
+    opacity: 0.3;
+  }
 }
 
 .rate__block {
@@ -42,4 +63,46 @@
 .rate__price,
 .rate__text {
   margin: 0;
+}
+
+.rate__text {
+  margin-bottom: 28px;
+  color: $dark;
+
+  @include set-font-size(16px, 24px);
+}
+
+.rate__line {
+  width: 100%;
+  height: 1px;
+  background-color: $dark;
+  opacity: 0.3;
+  margin-bottom: 30px;
+}
+
+.rate__list {
+  margin-bottom: 54px;
+
+  @include reset-to-zero();
+  @include list-style-none();
+}
+
+.rate__include {
+  position: relative;
+  margin-left: 31px;
+  margin-bottom: 15px;
+  color: $dark;
+
+  &::before {
+    background-image: url("../img/icon-check-orange.svg");
+    background-position: left center;
+    background-repeat: no-repeat;
+    left: -31px;
+    transform: translateY(5px);
+
+    @include pseudo();
+    @include set-img-size(22px, 22px);
+  }
+
+  @include set-font-size(16px, 32px);
 }

@@ -1,13 +1,37 @@
-.button {
-  padding: 30px 40px;
-  background-color: $accent_main;
-  color: $white;
-  letter-spacing: 2px;
+@media (min-width: $mobile-width) {
+  .button {
+    display: block;
+    padding: 30px 40px;
+    background-color: $accent_main;
+    color: $white;
+    letter-spacing: 2px;
+    text-align: center;
+    min-width: 250px;
+    min-height: 50px;
+    box-sizing: border-box;
 
-  @include uppercase();
-  @include set-font-size(12px, 15px);
+    @include uppercase();
+    @include set-font-size(12px, 15px);
 
-  &:hover {
-    background-color: $accent_hover;
+    &:hover,
+    &:focus {
+      background-color: $accent_hover;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    padding: 20px 40px;
+
+    @include set-font-size(10px, 12px);
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .button {
+    padding: 30px 40px;
+
+    @include set-font-size(12px, 15px);
   }
 }

@@ -1,44 +1,73 @@
-.nav__list,
-.nav__phone {
-  @include list-style-none();
-  @include reset-to-zero();
-}
+@media (min-width: $mobile-width) {
+  .nav {
+    display: flex;
+    align-items: center;
+  }
 
-.nav__list {
-  display: flex;
-  flex-wrap: wrap;
-  margin-left: auto;
-  margin-right: 90px;
-}
+  .nav__list,
+  .nav__phone {
+    @include list-style-none();
+    @include reset-to-zero();
+  }
 
-.nav__item {
-  margin-right: 40px;
+  .nav__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: 90px;
+  }
 
-  &:hover {
+  .nav__item {
+    margin-right: 40px;
+  }
+
+  .nav__link {
+    &:hover,
+    &:focus {
+      color: $accent_main;
+    }
+  }
+
+  .nav__logo {
+    margin-right: 40px;
+    width: 57px;
+    height: 22px;
+  }
+
+  .nav__phone {
+    position: relative;
+    margin-left: 41px;
+    margin-right: 14px;
+    text-decoration: underline;
+
+    @include set-font-size(16px, 32px);
+
+    &::before {
+      background-image: url("../img/icon-phone-color.svg");
+      background-position: left center;
+      background-repeat: no-repeat;
+      left: -41px;
+
+      @include pseudo();
+      @include set-img-size(30px, 30px);
+    }
+  }
+
+  .nav__tel {
     color: $accent_main;
   }
 }
 
-.nav__logo {
-  margin-right: 40px;
+@media (min-width: $tablet-width) {
+  .nav__logo {
+    width: 44px;
+    height: 17px;
+  }
 }
 
-.nav__phone {
-  position: relative;
-  margin-left: 41px;
-  margin-right: 14px;
-  color: $accent_main;
-  text-decoration: underline;
-
-  @include set-font-size(16px, 32px);
-
-  &::before {
-    background-image: url("../img/icon-phone-color.svg");
-    background-position: left center;
-    background-repeat: no-repeat;
-    left: -41px;
-
-    @include pseudo();
-    @include set-img-size(30px, 30px);
+@media (min-width: $desktop-width) {
+  .nav__logo {
+    width: 57px;
+    height: 22px;
   }
 }

@@ -1,9 +1,24 @@
-.header {
-  display: flex;
-  // justify-content: space-between;
-  align-items: center;
-  padding-top: 36px;
-  padding-bottom: 31px;
+@media (min-width: $mobile-width) {
+  .header {
+    display: flex;
+    align-items: center;
+    padding-top: 36px;
+    padding-bottom: 31px;
 
-  @include page-wrap();
+    @include page-wrap();
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .header {
+    padding-top: 18px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-top: 36px;
+    padding-bottom: 31px;
+  }
 }
