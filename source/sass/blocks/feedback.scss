@@ -20,6 +20,7 @@
   box-sizing: border-box;
 
   &::before {
+    background-color: $orange-bg;
     background-image: url("../img/question.jpg");
     background-position: left center;
     background-repeat: no-repeat;
