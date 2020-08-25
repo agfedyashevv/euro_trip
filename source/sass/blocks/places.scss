@@ -76,8 +76,9 @@
     position: relative;
     background-color: $blue-bg;
     margin-bottom: 101px;
+    margin-right: 40px;
     overflow: hidden;
-    width: 320px;
+    width: 350px;
     height: 430px;
 
     &:hover .places__mask {
@@ -119,6 +120,59 @@
 
 @media (min-width: $tablet-width) {
   .places {
+    text-align: center;
     padding-top: 80px;
+    margin-bottom: 98px;
+  }
+
+  .places__title {
+    width: auto;
+    margin-bottom: 20px;
+
+    @include set-font-size(30px, 45px);
+  }
+
+  .places__text {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    letter-spacing: -0.466667px;
+
+    @include set-font-size(16px, 28px);
+  }
+
+  .places__line {
+    display: none;
+  }
+
+  .places__item {
+    margin-bottom: 20px;
+    margin-right: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .places {
+    text-align: start;
+    padding-top: 199px;
+  }
+
+  .places__title {
+    width: 358px;
+    margin-bottom: 30px;
+
+    @include set-font-size(55px, 80px);
+  }
+
+  .places__text {
+    margin: 0 0 56px 0;
+  }
+
+  .places__line {
+    display: block;
+  }
+
+  .places__item {
+    margin-bottom: 101px;
+    margin-right: 40px;
   }
 }

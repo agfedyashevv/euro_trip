@@ -1,5 +1,6 @@
 .rate {
   display: flex;
+  flex-wrap: wrap;
 
   @include reset-to-zero();
   @include list-style-none();
@@ -13,10 +14,17 @@
   border: 1px solid rgba(44, 46, 63, 0.3);
   background-color: $white;
   border-radius: 6px;
-  max-width: 310px;
+  max-width: 370px;
+  margin-bottom: 30px;
 
   &:not(:last-child) {
     margin-right: 30px;
+  }
+
+  &:hover,
+  &:focus {
+    border-color: $accent_main;
+    box-shadow: 0 0 0 2px $accent_main;
   }
 
   &:hover .rate__include::before,
@@ -50,7 +58,7 @@
 .rate__name {
   font-weight: 600;
 
-  @include set-font-size(28px, 38px);
+  @include set-font-size(28px, 34px);
 }
 
 .rate__price {

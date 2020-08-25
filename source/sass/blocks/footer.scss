@@ -21,6 +21,12 @@
   width: 33%;
 }
 
+.footer__next {
+  padding-right: 30px;
+}
+
 .footer__text {
   opacity: 0.5;
+
+  @include set-font-size(14px, 17px);
 }

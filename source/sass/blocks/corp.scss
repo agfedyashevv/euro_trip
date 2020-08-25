@@ -1,7 +1,11 @@
 .corp {
-  @include padding-l-r(50px, 10px);
+  max-width: 302px;
+
+  @include padding-l-r(50px, 0);
 }
 
 .corp__text {
   line-height: 24px;
+
+  @include set-font-size(14px, 24px);
 }

@@ -5,7 +5,7 @@
   flex-direction: row-reverse;
   justify-content: space-between;
   margin-top: -270px;
-  margin-bottom: 178px;
+  margin-bottom: 108px;
 }
 
 .prices__title,
@@ -36,7 +36,7 @@
 }
 
 .prices__block {
-  width: 300px;
+  max-width: 280px;
   margin: auto 0;
 }
 

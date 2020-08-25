@@ -1,17 +1,13 @@
-// body {
-//   margin: 0;
-//   padding: 0;
-//   font-family: $font-title;
-//   background-color: $white;
-//   color: $dark;
-//   font-weight: 400;
-
-//   @include set-font-size();
-// }
-
-@mixin set-font-size($font-size: 16px, $line-height: 28px) {
-  font-size: $font-size;
-  line-height: $line-height;
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", "Arial", sans-serif;
+  background-color: #ffffff;
+  color: #2c2e3f;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.466667px;
 }
 
 .visually-hidden {
@@ -33,6 +29,11 @@ html {
 img {
   max-width: 100%;
   height: auto;
+}
+
+@mixin set-font-size($font-size: 16px, $line-height: 28px) {
+  font-size: $font-size;
+  line-height: $line-height;
 }
 
 @mixin list-style-none() {

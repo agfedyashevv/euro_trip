@@ -30,7 +30,7 @@
       </li>
     </ul>
     <ul class="nav__phone">
-      <li><a class="nav__tel" href="tel:+749978468446">+7 (499) -784-684-46</a></li>
+      <li class="nav__width"><a class="nav__tel" href="tel:+749978468446">+7 (499) -784-684-46</a></li>
     </ul>
   </header>
 
@@ -121,7 +121,7 @@
     <section class="description">
       <div class="description__box">
         <ul class="description__list">
-          <li class="description__item">Греция</li>
+          <li class="description__item description__item--active">Греция</li>
           <li class="description__item">Албания</li>
           <li class="description__item">Македония</li>
           <li class="description__item">Черногория</li>
@@ -154,7 +154,7 @@
                   света!
                 </p>
                 <div class="review__author">
-                  <img class="review__avatar" src="../img/review-avatar.jpg" width="38" height="38">
+                  <img class="review__avatar" src="../img/review-avatar.jpg" width="38" height="38" alt="Изображение автора отзыва">
                   <p class="review__name">Влада Голицина</p>
                 </div>
               </div>
@@ -214,14 +214,16 @@
     </section>
 
     <section class="feedback">
-      <div>
-        <p>У вас остались вопросы?</p>
-        <p>Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
-        <form>
-          <input>
-          <input>
+      <h2 class="visually-hidden">Обратная связь</h2>
+      <div class="feedback__block">
+        <p class="feedback__title">У вас остались вопросы?</p>
+        <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
+        <form class="feedback__form">
+          <span class="star"></span>
+          <input class="feedback__input" type="tel" maxlength="10" placeholder="Введите 10 цифр номера" required="">
+          <input class="feedback__input" type="email" placeholder="E-mail">
         </form>
-        <a class="button" href="#">Отправить</a>
+        <button type="submit" class="button feedback__button">Отправить</button>
       </div>
     </section>
 
@@ -251,8 +253,8 @@
     <div class="footer__contacts contacts">
       <div class="contacts__box">
         <h4 class="footer__title">Наши контакты</h4>
-        <p class="contacts__mail">puteshestviemechta@gmail.ru</p>
-        <p class="contacts__phone">+7 (499) -784-684-46</p>
+        <p><a class="contacts__mail" href="mailto:puteshestviemechta@gmail.ru">puteshestviemechta@gmail.ru</a></p>
+        <a class="contacts__phone" href="tel:+749978468446">+7 (499) -784-684-46</a>
       </div>
     </div>
     <div class="footer__corp corp">

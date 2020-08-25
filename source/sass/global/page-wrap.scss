@@ -11,7 +11,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    width: $desktop-width;
+    width: 1170px;
 
     @include padding-l-r();
   }

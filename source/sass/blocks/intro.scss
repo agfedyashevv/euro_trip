@@ -95,7 +95,7 @@
 
   .intro__title,
   .intro__text {
-    width: 340px;
+    width: 360px;
   }
 
   .intro__title {
@@ -103,6 +103,7 @@
     margin: 0;
     margin-bottom: 30px;
     font-weight: 600;
+    letter-spacing: -1.10667px;
 
     @include set-font-size(55px, 80px);
   }
@@ -120,5 +121,6 @@
 
   .intro__button {
     width: auto;
+    padding-right: 80px;
   }
 }

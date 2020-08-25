@@ -14,7 +14,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-left: auto;
-    margin-right: 90px;
+    margin-right: 50px;
   }
 
   .nav__item {
@@ -69,5 +69,9 @@
   .nav__logo {
     width: 57px;
     height: 22px;
+  }
+
+  .nav__width {
+    width: 180px;
   }
 }
