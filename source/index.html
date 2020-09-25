@@ -20,18 +20,18 @@
           <img src="img/logo-way-mobile.svg" width="57" height="22" alt="Логотип сайта Way">
         </picture>
       </a>
+      <ul class="nav__list">
+        <li class="nav__item">
+          <a class="nav__link" href="#">О путешествии</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#">Цены</a>
+        </li>
+      </ul>
+      <ul class="nav__phone">
+        <li class="nav__width"><a class="nav__tel" href="tel:+749978468446">+7 (499) -784-684-46</a></li>
+      </ul>
     </nav>
-    <ul class="nav__list">
-      <li class="nav__item">
-        <a class="nav__link" href="#">О путешествии</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="#">Цены</a>
-      </li>
-    </ul>
-    <ul class="nav__phone">
-      <li class="nav__width"><a class="nav__tel" href="tel:+749978468446">+7 (499) -784-684-46</a></li>
-    </ul>
   </header>
 
   <main class="main">
@@ -44,7 +44,7 @@
           <div class="intro__inner">
             <p class="intro__text">В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также
               потрясающая красота природы.</p>
-            <a class="button intro__button" href="#">Смотреть тур
+            <a class="button intro__button" href="#section_description">Смотреть тур
               <svg class="intro__arrow" width="16" height="16" viewBox="0 0 16 16" fill="none">
                 <path d="M8 1V15" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                 <path d="M15 8L8 15L1 8" stroke="white" stroke-width="2" stroke-linecap="round"
@@ -120,7 +120,7 @@
       </ul>
     </section>
 
-    <section class="description">
+    <section class="description" id="section_description">
       <div class="description__box">
         <ul class="description__list">
           <li class="description__item description__item--active">Греция</li>
@@ -156,7 +156,8 @@
                   света!
                 </p>
                 <div class="review__author">
-                  <img class="review__avatar" src="../img/review-avatar.jpg" width="38" height="38" alt="Изображение автора отзыва">
+                  <img class="review__avatar" src="../img/review-avatar.jpg" width="38" height="38"
+                    alt="Изображение автора отзыва">
                   <p class="review__name">Влада Голицина</p>
                 </div>
               </div>
@@ -191,8 +192,8 @@
               <li class="rate__include">Завтраки, ужины в отелях и ланчи на природе</li>
               <li class="rate__include">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
-            <a class="button rate__button" href="#">Купить тур сейчас</a>
           </div>
+          <a class="button rate__button" href="#">Купить тур сейчас</a>
         </li>
         <li class="rate__item">
           <div class="rate__inner">
@@ -209,8 +210,8 @@
               <li class="rate__include">Только завтраки в отелях</li>
               <li class="rate__include">Экскурсии по удивительно красивым местам Европы</li>
             </ul>
-            <a class="button rate__button" href="#">Купить тур сейчас</a>
           </div>
+          <a class="button rate__button" href="#">Купить тур сейчас</a>
         </li>
       </ul>
     </section>

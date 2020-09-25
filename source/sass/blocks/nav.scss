@@ -1,3 +1,16 @@
+  .nav {
+    width: 100%;
+  }
+
+  .nav__logo {
+    width: 57px;
+    height: 22px;
+  }
+
+  .nav__width {
+    width: 180px;
+  }
+
 @media (min-width: $mobile-width) {
   .nav {
     display: flex;
@@ -22,6 +35,8 @@
   }
 
   .nav__link {
+    color: $most_dark;
+
     &:hover,
     &:focus {
       color: $accent_main;
@@ -62,16 +77,5 @@
   .nav__logo {
     width: 44px;
     height: 17px;
-  }
-}
-
-@media (min-width: $desktop-width) {
-  .nav__logo {
-    width: 57px;
-    height: 22px;
-  }
-
-  .nav__width {
-    width: 180px;
   }
 }

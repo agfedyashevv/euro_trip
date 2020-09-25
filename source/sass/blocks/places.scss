@@ -122,7 +122,7 @@
   .places {
     text-align: center;
     padding-top: 80px;
-    margin-bottom: 98px;
+    margin-bottom: 58px;
   }
 
   .places__title {
@@ -154,6 +154,7 @@
   .places {
     text-align: start;
     padding-top: 199px;
+    margin-bottom: 0px;
   }
 
   .places__title {
@@ -164,7 +165,7 @@
   }
 
   .places__text {
-    margin: 0 0 56px 0;
+    margin: 0 0 6px 0;
   }
 
   .places__line {
@@ -172,7 +173,8 @@
   }
 
   .places__item {
-    margin-bottom: 101px;
+    margin-top: 50px;
+    margin-bottom: 51px;
     margin-right: 40px;
   }
 }
