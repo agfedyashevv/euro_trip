@@ -59,6 +59,11 @@
     @include pseudo();
     @include set-img-size(30px, 30px);
   }
+
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .prices__connection,

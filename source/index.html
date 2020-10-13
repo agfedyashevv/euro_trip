@@ -22,10 +22,10 @@
       </a>
       <ul class="nav__list">
         <li class="nav__item">
-          <a class="nav__link" href="#">О путешествии</a>
+          <a class="nav__link" href="#section_places">О путешествии</a>
         </li>
         <li class="nav__item">
-          <a class="nav__link" href="#">Цены</a>
+          <a class="nav__link" href="#section_prices">Цены</a>
         </li>
       </ul>
       <ul class="nav__phone">
@@ -56,7 +56,7 @@
       </div>
     </section>
 
-    <section class="places">
+    <section class="places" id="section_places">
       <h2 class="places__title">Места посещения</h2>
       <div class="places__line"></div>
       <p class="places__text">Вы можете выбрать полный тур или частичный, с посещением первых 3 мест</p>
@@ -167,7 +167,7 @@
       </div>
     </section>
 
-    <section class="prices">
+    <section class="prices" id="section_prices">
       <div class="prices__block">
         <h2 class="prices__title">Цены</h2>
         <div class="prices__line"></div>
@@ -222,11 +222,13 @@
         <p class="feedback__title">У вас остались вопросы?</p>
         <p class="feedback__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
         <form class="feedback__form">
-          <span class="star"></span>
-          <input class="feedback__input" type="tel" maxlength="10" placeholder="Введите 10 цифр номера" required>
-          <input class="feedback__input" type="email" placeholder="E-mail">
+          <div class="feedback__form-block">
+            <span class="star"></span>
+            <input class="feedback__input" type="tel" maxlength="10" placeholder="Введите 10 цифр номера" required>
+            <input class="feedback__input" type="email" placeholder="E-mail">
+          </div>
+          <button type="submit" class="button feedback__button">Отправить</button>
         </form>
-        <button type="submit" class="button feedback__button">Отправить</button>
       </div>
     </section>
 
@@ -236,21 +238,21 @@
     <div class="footer__next next">
       <h4 class="footer__title">Следующие путешествия</h4>
       <ul class="next__list footer__text">
-        <li class="next__item">Марсель</li>
-        <li class="next__item">Ним</li>
-        <li class="next__item">Монпелье</li>
-        <li class="next__item">Барселона</li>
-        <li class="next__item">Пальма</li>
-        <li class="next__item">Сардиния</li>
-        <li class="next__item">Палермо</li>
-        <li class="next__item">Катания</li>
-        <li class="next__item">Неаполь</li>
-        <li class="next__item">Рим</li>
-        <li class="next__item">Корс</li>
-        <li class="next__item">Ницца</li>
-        <li class="next__item">Монако</li>
-        <li class="next__item">Динь-ле-Бен</li>
-        <li class="next__item">Гренобль</li>
+        <li><a class="next__item" href="#">Марсель</a></li>
+        <li><a class="next__item" href="#">Ним</li>
+        <li><a class="next__item" href="#">Монпелье</li>
+        <li><a class="next__item" href="#">Барселона</li>
+        <li><a class="next__item" href="#">Пальма</li>
+        <li><a class="next__item" href="#">Сардиния</li>
+        <li><a class="next__item" href="#">Палермо</li>
+        <li><a class="next__item" href="#">Катания</li>
+        <li><a class="next__item" href="#">Неаполь</li>
+        <li><a class="next__item" href="#">Рим</li>
+        <li><a class="next__item" href="#">Корс</li>
+        <li><a class="next__item" href="#">Ницца</li>
+        <li><a class="next__item" href="#">Монако</li>
+        <li><a class="next__item" href="#">Динь-ле-Бен</li>
+        <li><a class="next__item" href="#">Гренобль</li>
       </ul>
     </div>
     <div class="footer__contacts contacts">

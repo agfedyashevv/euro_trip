@@ -9,6 +9,11 @@
 
   .nav__width {
     width: 180px;
+
+    &:hover,
+    &:focus {
+      opacity: 0.7;
+    }
   }
 
 @media (min-width: $mobile-width) {

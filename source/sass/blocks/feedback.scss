@@ -53,11 +53,13 @@
 }
 
 .feedback__form {
+  @include set-font-size(14px, 17px);
+}
+
+.feedback__form-block {
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-
-  @include set-font-size(14px, 17px);
 }
 
 .feedback__button {

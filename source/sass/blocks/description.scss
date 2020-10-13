@@ -18,6 +18,7 @@
 
 .description__item {
   opacity: 0.3;
+  cursor: pointer;
 
   &:hover {
     color: $accent_hover;
